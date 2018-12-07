@@ -4,7 +4,7 @@ RUN apk add --no-cache \
 		curl
 
 RUN curl -SsL -o /usr/local/bin/kubectl \
-		"https://storage.googleapis.com/kubernetes-release/release/v1.12.1/bin/linux/amd64/kubectl" \
+		"https://storage.googleapis.com/kubernetes-release/release/v1.12.3/bin/linux/amd64/kubectl" \
 	&& chmod +x /usr/local/bin/kubectl
 
 RUN addgroup -g 1000 alpine && \
